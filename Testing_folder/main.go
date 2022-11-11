@@ -1,10 +1,13 @@
 package main
 
 import (
-    "hello/internal/hello"
+    "randomlkjlskj/internal/hello"
     "os"
 )
 
 func main(){
-    hello.PrintTo2(os.Stdout)
+    hello.Print("Hello, Xebia")
+    printer:= hello.Printer{Output:os.Stderr}
+    printer.Print("Error")
+    
 }

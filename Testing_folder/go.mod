@@ -1,3 +1,3 @@
-module hello
+module randomlkjlskj
 
 go 1.19

@@ -149,14 +149,14 @@ func readers() {
 	}
 }
 
-func main() {
-	// fmt.Println("Hello, 世界")
-	// fmt.Println("my lucky number is " + fmt.Sprint(rand.Intn(6)))
-	// fmt.Println(for_test())
-
-	// call_sqrt_func()
-	// methods_interface()
-	// error_handling("4")
-	readers()
-
-}
+//func main() {
+//	// fmt.Println("Hello, 世界")
+//	// fmt.Println("my lucky number is " + fmt.Sprint(rand.Intn(6)))
+//	// fmt.Println(for_test())
+//
+//	// call_sqrt_func()
+//	// methods_interface()
+//	// error_handling("4")
+//	readers()
+//
+//}
