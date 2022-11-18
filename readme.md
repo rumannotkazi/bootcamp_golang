@@ -58,3 +58,9 @@ go SampleFunction()
 Acts like a buffer to be used for reading and writing during the go routine.
 > Important: writing to a channel halts the process until you read it again and hence
 we use a `go routine`
+
+####
+- wait groups: `wg:=new(WaitGroup)`
+- sync.once
+
+A good exercise on concurrency: go.dev/tour/concurrency/10

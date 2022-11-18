@@ -38,11 +38,25 @@ func (c *ConsistentVal) Decrement() {
 
 // Channels
 
-func WriteChannels(ch *chan int, val int) {
-    *ch <- val
+func WriteChannels(ch *chan int, val int, cap int) {
+    for i:=0;i<cap;i++{
+        *ch <- val
+        val++
+    }
+    close(*ch)
+
 }
 
-func ReadChannels(ch *chan int) int{
-    d:=<-*ch
-    return d
+func ReadChannels(ch *chan int, cap int){
+    for i:=0;i<cap;i++{
+        d:=<-*ch
+        fmt.Println(d)
+    }
+}
+
+func ReadChannelsClose(ch *chan int){
+    for v:=range *ch{
+        fmt.Println(v)
+    }
+
 }
