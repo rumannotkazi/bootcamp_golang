@@ -43,3 +43,18 @@ $ ./hello-application  // to run the application
     they want.
 2. Add a Run method to your counter that loops repeatedly calling Next and printing the result to the configured output. As always, running the tests
     should not cause the counter to print anything in the terminal. How can you test the Run method without the test simply pausing forever?
+
+
+### Concurrency
+    Concurrency helps creating different threads (useful in test scenarios).
+    It is not parallel processing, concurrency can happen in different sequences and can halt in betweeen.
+    "Parallel processing is concurrent but not all concurrent processes are parallel".
+
+```
+go SampleFunction()
+```
+
+#### Channels
+Acts like a buffer to be used for reading and writing during the go routine.
+" Important: writing to a channel halts the process until you read it again and hence
+we use a `go routine` "

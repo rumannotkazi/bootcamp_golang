@@ -21,8 +21,7 @@ func main(){
         for i:=0;i<iterations;i++{
             counter.Print(val.Next())
         }
-    }
-    if strings.ToLower(in_decision)=="y"{
+    } else if strings.ToLower(in_decision)=="y"{
         fmt.Println("Where do you want the counter to start from?")
         var start_count int
         fmt.Scanln(&start_count)
