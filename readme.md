@@ -46,9 +46,9 @@ $ ./hello-application  // to run the application
 
 
 ### Concurrency
-    Concurrency helps creating different threads (useful in test scenarios).
-    It is not parallel processing, concurrency can happen in different sequences and can halt in betweeen.
-    "Parallel processing is concurrent but not all concurrent processes are parallel".
+Concurrency helps creating different threads (useful in test scenarios).
+It is not parallel processing, concurrency can happen in different sequences and can halt in betweeen.
+> Parallel processing is concurrent but not all concurrent processes are parallel.
 
 ```
 go SampleFunction()
@@ -56,5 +56,5 @@ go SampleFunction()
 
 #### Channels
 Acts like a buffer to be used for reading and writing during the go routine.
-" Important: writing to a channel halts the process until you read it again and hence
-we use a `go routine` "
+> Important: writing to a channel halts the process until you read it again and hence
+we use a `go routine`
